@@ -1,0 +1,22 @@
+{"properties": [
+  {
+    "name": "MongoClientURI",
+    "type": "java.lang.String",
+    "description": "A description for 'MongoClientURI'"
+  },
+  {
+    "name": "\"mongodb+srv",
+    "type": "java.lang.String",
+    "description": "A description for '\"mongodb+srv'"
+  },
+  {
+    "name": "MongoDatabase",
+    "type": "java.lang.String",
+    "description": "A description for 'MongoDatabase'"
+  },
+  {
+    "name": "MongoClient",
+    "type": "java.lang.String",
+    "description": "A description for 'MongoClient'"
+  }
+]}
