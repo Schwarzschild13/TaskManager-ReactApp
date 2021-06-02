@@ -1,4 +1,5 @@
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
+import { FaRegCircle } from "react-icons/fa";
 
 const Button = ({ color, text, onClick }) => {
   return (
@@ -7,7 +8,10 @@ const Button = ({ color, text, onClick }) => {
       style={{ backgroundColor: color }}
       className='btn'
     >
+      <div>
+      <FaRegCircle/>
       {text}
+        </div>
     </button>
   )
 }
