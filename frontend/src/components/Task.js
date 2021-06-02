@@ -7,7 +7,8 @@ const Task = ({ task, onDelete, onToggle }) => {
         <div onClick={()=> {onToggle(task.id)}}>  
         {task.status == "Not Completed" ? (<FaRegCircle/>) : (<FaCheck/>)}
         </div>
-        <div className={task.status == "Completed" ? `cross`: ``}> {task.name}</div>
+        <div className={task.status == "Completed" ? `cross`: ``}> 
+        {task.name}</div>
 
         <FaTimes
           style={{ color: "red", cursor: "pointer" }}
