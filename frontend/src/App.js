@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Tasks from "./components/Tasks";
-import AddTask from "./components/AddTask";
+import AddTask from "./components/AddTask"
 
 
 const App = () => {
@@ -89,7 +89,8 @@ const App = () => {
           showAdd={showAddTask}
         />
             <>
-              {showAddTask && <AddTask onAdd={addTask} />}
+              {showAddTask && <AddTask onAdd={addTask} remAdd={() => setShowAddTask(!showAddTask)}/>}
+              
               {tasks.length > 0 ? (
                 <Tasks
                   tasks={tasks}

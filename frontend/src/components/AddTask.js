@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-const AddTask = ({ onAdd }) => {
+const AddTask = ({ onAdd, remAdd}) => {
   const [name, setText] = useState('')
   const [status, setStatus] = useState("Not Completed")
 
@@ -16,6 +16,8 @@ const AddTask = ({ onAdd }) => {
 
     setText('')
     setStatus("Not Completed")
+
+    remAdd()
   }
 
   return (
