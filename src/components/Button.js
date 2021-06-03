@@ -1,5 +1,4 @@
-import PropTypes from "prop-types";
-import { FaPlus, FaRegCircle } from "react-icons/fa";
+import PropTypes from "prop-types"
 
 const Button = ({ color, text, onClick }) => {
   return (
