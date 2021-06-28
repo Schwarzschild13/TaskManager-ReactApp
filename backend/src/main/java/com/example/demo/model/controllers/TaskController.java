@@ -56,7 +56,7 @@ public class TaskController {
 	
 	@PutMapping("/task/{id}")
 	@CrossOrigin
-	public List<Task> updateDept(@RequestBody Task task, @PathVariable String id) {
+	public List<Task> updateTask(@RequestBody Task task, @PathVariable String id) {
 		task.setId(id);
 		taskRepo.save(task);
 
